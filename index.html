@@ -34,6 +34,22 @@ body {
     margin-bottom: 32px;
 }
 
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #4d4d4d;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #76B900;
+    text-decoration: underline;
+}
+
 .main-title {
     font-size: 32px;
     font-weight: 700;
@@ -252,6 +268,10 @@ body {
     font-style: italic;
 }
 
+.module-list ul {
+    margin: 4px 0 0 18px;
+}
+
 /* Module Meta */
 .module-meta {
     display: flex;
@@ -431,6 +451,7 @@ body {
     <div class="container">
         <!-- Header -->
         <header class="header">
+            <a class="back-link" href="https://nvidia-academy.github.io/AI-Factory-Deployment/">&larr; Back to Training Overview</a>
             <h1 class="main-title">AI Factory Deployment</h1>
             <p class="subtitle">Networking Configuration Workshop</p>
         </header>
@@ -525,17 +546,15 @@ body {
                 <div class="tab-content sections-single" id="outline-tab">
                     <section class="content-section">
                         <div class="section-header">
-                            <h2 class="section-title">4 Sessions</h2>
+                            <h2 class="section-title">4 Days</h2>
                         </div>
                         <div class="section-body">
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 1</h3>
+                                    <h3 class="module-title">Day 1 — Accelerated Networking for AI Infrastructure</h3>
                                     <ul class="module-list">
-                                        <li>AI Factory Networking Overview</li>
-                                        <li>Introduction to NVIDIA Air©</li>
-                                        <li>Cumulus Linux Review</li>
-                                        <li>Cumulus Linux Hands On (Software Upgrades and Configuring BGP (Border Gateway Protocol) Unnumbered)</li>
+                                        <li>AI Foundations for Networking Professionals</li>
+                                        <li>AI Networking</li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -545,12 +564,17 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 2</h3>
+                                    <h3 class="module-title">Day 2 — Cumulus Linux</h3>
                                     <ul class="module-list">
-                                        <li>Cumulus Linux – Advanced Topics (VXLAN w/EVPN</li>
-                                        <li>Distributed VXLAN Routing)</li>
-                                        <li>Spectrum-X Review</li>
-                                        <li>Spectrum-X Hands On (Testing Configuration)</li>
+                                        <li>Cumulus Linux Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>Prepare the Lab and Software Upgrade</li>
+                                                <li>BGP Unnumbered</li>
+                                                <li>VXLAN with EVPN (L2)</li>
+                                                <li>Distributed Symmetric VXLAN Routing</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -560,10 +584,16 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 3</h3>
+                                    <h3 class="module-title">Day 3 — Spectrum-X</h3>
                                     <ul class="module-list">
-                                        <li>Access NetQ Server in Air</li>
-                                        <li>NetQ Server Troubleshooting</li>
+                                        <li>Spectrum-X Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>BGP Underlay</li>
+                                                <li>EVPN Overlay</li>
+                                                <li>Multi Tenant Rail</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -573,16 +603,14 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 4</h3>
-                                    <p class="module-desc">InfiniBand Hands On</p>
+                                    <h3 class="module-title">Day 4 — InfiniBand</h3>
                                     <ul class="module-list">
-                                        <li>Identify InfiniBand components</li>
-                                        <li>OOB Management verification</li>
-                                        <li>Fabric Validation – Validate Connectivity</li>
-                                        <li>Fabric Validation – Troubleshoot Connectivity</li>
-                                        <li>Use UFM – Identify components</li>
-                                        <li>Use UFM – Check network health</li>
-                                        <li>Use UFM – Monitor the network</li>
+                                        <li>InfiniBand Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>InfiniBand Hands-on Labs</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -600,7 +628,7 @@ body {
         <footer class="footer">
             <div class="footer-left">
                 <p class="footer-url"><a href="https://www.nvidia.com/en-us/training/academy/" target="_blank" style="color: #000000;" style="text-decoration: none;" >ACADEMY.NVIDIA.COM</a></p>
-                <p class="footer-date">LAST UPDATED 2026-04-10</p>
+                <p class="footer-date">LAST UPDATED 2026-09-15</p>
             </div>
             <div class="footer-right">
                 <svg class="nvidia-logo" viewBox="0 0 2490.55 459.6" xmlns="http://www.w3.org/2000/svg">
