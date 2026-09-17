@@ -315,6 +315,28 @@ body {
     border: 2px solid #0071C5;
 }
 
+.badge-requirement {
+    text-transform: none;
+}
+
+.badge-required {
+    background: #76B900;
+    color: #ffffff;
+    border: 2px solid #76B900;
+}
+
+.badge-optional {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 2px solid #0071C5;
+}
+
+.badge-not-applicable {
+    background: #e8e8e8;
+    color: #4d4d4d;
+    border: 2px solid #a8a8a8;
+}
+
 .duration {
     font-size: 13px;
     color: #666666;
@@ -756,6 +778,37 @@ body {
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
+
+    const prerequisiteRequirements = new Map([
+        ['AI Infrastructure and Operations Fundamentals', 'Required'],
+        ['InfiniBand Network Administration', 'Required'],
+        ['The Fundamentals of RDMA Programming', 'Optional'],
+        ['Data Center Management Made Easy with UFM Course', 'Required'],
+        ['Ethernet Switch Systems', 'Optional'],
+        ['LinkX Interconnect Solutions', 'Optional'],
+        ['Cumulus Linux Administration', 'Required'],
+        ['BlueField DPU Administration', 'Optional'],
+        ['AI Factory Reference Architectures', 'Required'],
+        ['NetQ Deployment and Installation', 'Optional'],
+        ['Spectrum-X Platform Overview', 'Required'],
+        ['Ansible Essentials for Network Engineers Course', 'Optional'],
+        ['NVIDIA Mission Control Deployment', 'Optional']
+    ]);
+
+    document.querySelectorAll('#prerequisites-tab .module-card').forEach(card => {
+        const title = card.querySelector('.module-title')?.textContent.trim();
+        const requirement = prerequisiteRequirements.get(title);
+        const meta = card.querySelector('.module-meta');
+
+        if (!requirement || !meta) {
+            return;
+        }
+
+        const requirementBadge = document.createElement('span');
+        requirementBadge.className = `badge badge-requirement ${requirement === 'Required' ? 'badge-required' : 'badge-optional'}`;
+        requirementBadge.textContent = requirement;
+        meta.insertBefore(requirementBadge, meta.querySelector('.duration'));
+    });
 
     // Handle tab button clicks
     tabButtons.forEach(button => {
