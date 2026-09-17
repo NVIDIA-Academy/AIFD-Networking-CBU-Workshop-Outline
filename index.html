@@ -34,6 +34,22 @@ body {
     margin-bottom: 32px;
 }
 
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #4d4d4d;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #76B900;
+    text-decoration: underline;
+}
+
 .main-title {
     font-size: 32px;
     font-weight: 700;
@@ -252,6 +268,10 @@ body {
     font-style: italic;
 }
 
+.module-list ul {
+    margin: 4px 0 0 18px;
+}
+
 /* Module Meta */
 .module-meta {
     display: flex;
@@ -293,6 +313,28 @@ body {
     background: #ffffff;
     color: #000000;
     border: 2px solid #0071C5;
+}
+
+.badge-requirement {
+    text-transform: none;
+}
+
+.badge-required {
+    background: #76B900;
+    color: #ffffff;
+    border: 2px solid #76B900;
+}
+
+.badge-optional {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 2px solid #0071C5;
+}
+
+.badge-not-applicable {
+    background: #e8e8e8;
+    color: #4d4d4d;
+    border: 2px solid #a8a8a8;
 }
 
 .duration {
@@ -431,6 +473,7 @@ body {
     <div class="container">
         <!-- Header -->
         <header class="header">
+            <a class="back-link" href="https://nvidia-academy.github.io/AI-Factory-Deployment/">&larr; Back to Training Overview</a>
             <h1 class="main-title">AI Factory Deployment</h1>
             <p class="subtitle">Networking Configuration Workshop</p>
         </header>
@@ -490,8 +533,28 @@ body {
                         <div class="section-body">
                             <div class="module-card">
                                 <div class="module-info">
+                                    <h3 class="module-title">AI Infrastructure and Operations Fundamentals</h3>
+                                    <p class="module-desc">Gain insights into the evolving AI landscape, covering the essential compute power, tools, and algorithms driving modern enterprise technology. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139841" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">7 hours 25 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
                                     <h3 class="module-title">InfiniBand Network Administration</h3>
-                                    <p class="module-desc">Master InfiniBand technology fundamentals to effectively install, configure, manage, and troubleshoot fabric architectures. <a href ="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139854" target="_blank" style="color: #76b900;">Learn more about this course.</a></p>
+                                    <p class="module-desc">Master InfiniBand technology fundamentals to effectively install, configure, manage, and troubleshoot fabric architectures. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139854" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">5 hours 22 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">The Fundamentals of RDMA Programming</h3>
+                                    <p class="module-desc">Master high-speed networking architecture and implement kernel bypass and zero-copy networking to reduce CPU strain and latency. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139820" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
                                 </div>
                                 <div class="module-meta">
                                     <span class="badge badge-self-paced">Self-Paced</span>
@@ -500,22 +563,102 @@ body {
                             </div>
                             <div class="module-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Cumulus Linux Essentials</h3>
-                                    <p class="module-desc">Explore NVIDIA Cumulus Linux through a combination of presentations and recorded hands-on demonstrations. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139853" target="_blank" style="color: #76b900;">Learn more about this course.</a></p>
+                                    <h3 class="module-title">Data Center Management Made Easy with UFM Course</h3>
+                                    <p class="module-desc">Provision, monitor, and troubleshoot InfiniBand data center fabrics using UFM Enterprise, covering telemetry, traffic optimization, and job scheduler integration. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139829" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
                                 </div>
                                 <div class="module-meta">
                                     <span class="badge badge-self-paced">Self-Paced</span>
-                                    <span class="duration">1 hour</span>
+                                    <span class="duration">2 hours 40 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">Ethernet Switch Systems</h3>
+                                    <p class="module-desc">Explore NVIDIA high-throughput Ethernet switch systems for data centers, including the SN2000 through SN5000 series. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15930811" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">8 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">LinkX Interconnect Solutions</h3>
+                                    <p class="module-desc">Enhance data center scalability and performance using high-speed interconnect options such as direct attach copper and active optical cables. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15930809" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">7 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">Cumulus Linux Administration</h3>
+                                    <p class="module-desc">Deploy, operate, and manage Cumulus Linux-based data center networks on NVIDIA Spectrum hardware, covering switch configuration, VLANs, routing protocols, VXLAN, and EVPN. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139963" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">5 hours</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">BlueField DPU Administration</h3>
+                                    <p class="module-desc">Learn the basic concepts of NVIDIA BlueField DPUs as a platform for accelerated data center computing and their use with the NVIDIA DOCA SDK. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139834" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">4 hours</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">AI Factory Reference Architectures</h3>
+                                    <p class="module-desc">Explore the reference architectures used to build NVIDIA AI Factories for enterprise AI workloads, including the Enterprise RA framework, GB300 NVL72, and RTX PRO AI Factory examples. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A16237010" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">22 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">NetQ Deployment and Installation</h3>
+                                    <p class="module-desc">Use NVIDIA NetQ to monitor network health, validate configurations, and troubleshoot issues in real time for a stable, scalable AI data center. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15853441" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">1 hour 44 mins</span>
                                 </div>
                             </div>
                             <div class="module-card">
                                 <div class="module-info">
                                     <h3 class="module-title">Spectrum-X Platform Overview</h3>
-                                    <p class="module-desc">Discover how Spectrum-X enhances AI data center network architecture by addressing congestion and latency issues in traditional Ethernet.</p>
+                                    <p class="module-desc">Discover how Spectrum-X enhances AI data center network architecture by addressing congestion and latency issues in traditional Ethernet. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15930806" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
                                 </div>
                                 <div class="module-meta">
                                     <span class="badge badge-self-paced">Self-Paced</span>
-                                    <span class="duration">22 minutes</span>
+                                    <span class="duration">22 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">Ansible Essentials for Network Engineers Course</h3>
+                                    <p class="module-desc">Automate fabric workflows by exploring Ansible modules and writing playbooks adapted for modern data centers. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139825" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">1 hour 30 mins</span>
+                                </div>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-info">
+                                    <h3 class="module-title">NVIDIA Mission Control Deployment</h3>
+                                    <p class="module-desc">Understand the components and tools that make up NVIDIA Mission Control, and learn to deploy and configure user and control plane Kubernetes, the observability stack, Run:ai, and other components. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A16059937" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
+                                </div>
+                                <div class="module-meta">
+                                    <span class="badge badge-self-paced">Self-Paced</span>
+                                    <span class="duration">9 hours 11 mins</span>
                                 </div>
                             </div>
                         </div>
@@ -525,17 +668,15 @@ body {
                 <div class="tab-content sections-single" id="outline-tab">
                     <section class="content-section">
                         <div class="section-header">
-                            <h2 class="section-title">4 Sessions</h2>
+                            <h2 class="section-title">4 Days</h2>
                         </div>
                         <div class="section-body">
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 1</h3>
+                                    <h3 class="module-title">Day 1 — Accelerated Networking for AI Infrastructure</h3>
                                     <ul class="module-list">
-                                        <li>AI Factory Networking Overview</li>
-                                        <li>Introduction to NVIDIA Air©</li>
-                                        <li>Cumulus Linux Review</li>
-                                        <li>Cumulus Linux Hands On (Software Upgrades and Configuring BGP (Border Gateway Protocol) Unnumbered)</li>
+                                        <li>AI Foundations for Networking Professionals</li>
+                                        <li>AI Networking</li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -545,12 +686,17 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 2</h3>
+                                    <h3 class="module-title">Day 2 — Cumulus Linux</h3>
                                     <ul class="module-list">
-                                        <li>Cumulus Linux – Advanced Topics (VXLAN w/EVPN</li>
-                                        <li>Distributed VXLAN Routing)</li>
-                                        <li>Spectrum-X Review</li>
-                                        <li>Spectrum-X Hands On (Testing Configuration)</li>
+                                        <li>Cumulus Linux Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>Prepare the Lab and Software Upgrade</li>
+                                                <li>BGP Unnumbered</li>
+                                                <li>VXLAN with EVPN (L2)</li>
+                                                <li>Distributed Symmetric VXLAN Routing</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -560,10 +706,16 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 3</h3>
+                                    <h3 class="module-title">Day 3 — Spectrum-X</h3>
                                     <ul class="module-list">
-                                        <li>Access NetQ Server in Air</li>
-                                        <li>NetQ Server Troubleshooting</li>
+                                        <li>Spectrum-X Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>BGP Underlay</li>
+                                                <li>EVPN Overlay</li>
+                                                <li>Multi Tenant Rail</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -573,16 +725,14 @@ body {
                             </div>
                             <div class="module-card workshop-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Session 4</h3>
-                                    <p class="module-desc">InfiniBand Hands On</p>
+                                    <h3 class="module-title">Day 4 — InfiniBand</h3>
                                     <ul class="module-list">
-                                        <li>Identify InfiniBand components</li>
-                                        <li>OOB Management verification</li>
-                                        <li>Fabric Validation – Validate Connectivity</li>
-                                        <li>Fabric Validation – Troubleshoot Connectivity</li>
-                                        <li>Use UFM – Identify components</li>
-                                        <li>Use UFM – Check network health</li>
-                                        <li>Use UFM – Monitor the network</li>
+                                        <li>InfiniBand Overview</li>
+                                        <li><strong>Hands-on Labs</strong>
+                                            <ul>
+                                                <li>InfiniBand Hands-on Labs</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="module-meta">
@@ -600,7 +750,7 @@ body {
         <footer class="footer">
             <div class="footer-left">
                 <p class="footer-url"><a href="https://www.nvidia.com/en-us/training/academy/" target="_blank" style="color: #000000;" style="text-decoration: none;" >ACADEMY.NVIDIA.COM</a></p>
-                <p class="footer-date">LAST UPDATED 2026-04-10</p>
+                <p class="footer-date">LAST UPDATED 2026-09-15</p>
             </div>
             <div class="footer-right">
                 <svg class="nvidia-logo" viewBox="0 0 2490.55 459.6" xmlns="http://www.w3.org/2000/svg">
@@ -628,6 +778,37 @@ body {
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
+
+    const prerequisiteRequirements = new Map([
+        ['AI Infrastructure and Operations Fundamentals', 'Required'],
+        ['InfiniBand Network Administration', 'Required'],
+        ['The Fundamentals of RDMA Programming', 'Optional'],
+        ['Data Center Management Made Easy with UFM Course', 'Required'],
+        ['Ethernet Switch Systems', 'Optional'],
+        ['LinkX Interconnect Solutions', 'Optional'],
+        ['Cumulus Linux Administration', 'Required'],
+        ['BlueField DPU Administration', 'Optional'],
+        ['AI Factory Reference Architectures', 'Required'],
+        ['NetQ Deployment and Installation', 'Optional'],
+        ['Spectrum-X Platform Overview', 'Required'],
+        ['Ansible Essentials for Network Engineers Course', 'Optional'],
+        ['NVIDIA Mission Control Deployment', 'Optional']
+    ]);
+
+    document.querySelectorAll('#prerequisites-tab .module-card').forEach(card => {
+        const title = card.querySelector('.module-title')?.textContent.trim();
+        const requirement = prerequisiteRequirements.get(title);
+        const meta = card.querySelector('.module-meta');
+
+        if (!requirement || !meta) {
+            return;
+        }
+
+        const requirementBadge = document.createElement('span');
+        requirementBadge.className = `badge badge-requirement ${requirement === 'Required' ? 'badge-required' : 'badge-optional'}`;
+        requirementBadge.textContent = requirement;
+        meta.insertBefore(requirementBadge, meta.querySelector('.duration'));
+    });
 
     // Handle tab button clicks
     tabButtons.forEach(button => {
