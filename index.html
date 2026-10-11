@@ -283,8 +283,13 @@ body {
 }
 
 .badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     width: 78px;
+    min-width: 78px;
+    max-width: 78px;
     padding: 3px 8px;
     font-size: 10.45px;
     font-weight: 500;
@@ -565,7 +570,7 @@ body {
                             </div>
                             <div class="module-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Data Center Management Made Easy with UFM Course</h3>
+                                    <h3 class="module-title">Data Center Management Made Easy with NVIDIA UFM</h3>
                                     <p class="module-desc">Provision, monitor, and troubleshoot InfiniBand data center fabrics using UFM Enterprise, covering telemetry, traffic optimization, and job scheduler integration. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139829" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
                                 </div>
                                 <div class="module-meta">
@@ -645,7 +650,7 @@ body {
                             </div>
                             <div class="module-card">
                                 <div class="module-info">
-                                    <h3 class="module-title">Ansible Essentials for Network Engineers Course</h3>
+                                    <h3 class="module-title">Ansible Essentials for Network Engineers</h3>
                                     <p class="module-desc">Automate fabric workflows by exploring Ansible modules and writing playbooks adapted for modern data centers. <a href="https://www.nvidia.com/en-us/training/academy/course-detail/?id=course%3A15139825" target="_blank" rel="noopener noreferrer" style="color: #76b900;">Learn more about this course</a></p>
                                 </div>
                                 <div class="module-meta">
@@ -785,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ['AI Infrastructure and Operations Fundamentals', 'Required'],
         ['InfiniBand Network Administration', 'Required'],
         ['The Fundamentals of RDMA Programming', 'Optional'],
-        ['Data Center Management Made Easy with UFM Course', 'Required'],
+        ['Data Center Management Made Easy with NVIDIA UFM', 'Required'],
         ['Ethernet Switch Systems', 'Optional'],
         ['LinkX Interconnect Solutions', 'Optional'],
         ['Cumulus Linux Administration', 'Required'],
@@ -793,7 +798,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ['AI Factory Reference Architectures', 'Required'],
         ['NetQ Deployment and Installation', 'Optional'],
         ['Spectrum-X Platform Overview', 'Required'],
-        ['Ansible Essentials for Network Engineers Course', 'Optional'],
+        ['Ansible Essentials for Network Engineers', 'Optional'],
         ['NVIDIA Mission Control Deployment', 'Optional']
     ]);
 
